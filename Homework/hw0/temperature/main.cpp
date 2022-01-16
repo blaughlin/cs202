@@ -19,6 +19,12 @@ double cpp_ftoc(const char* str) {
     return (temp -32) * (5.0/9.0);
 }
 
+// converts to Celsius to Fahrenheit
+double  c_ctof(const char*str){
+    double temp = std::strtod(str, NULL);
+    return temp * (9.0/5.0)  + 32;
+}
+
 int main(int argc, const char** argv) {
     vector<string> args;
     for (int index = 0; index < argc; index++){
