@@ -6,8 +6,18 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <stdio.h>
+#include <stdlib.h>
 using std::string;
 using std::vector;
+using std::cout;
+using std::endl;
+
+// converts Fahrenheit to Celsius
+double cpp_ftoc(const char* str) {
+    double temp = std::strtod(str, NULL);
+    return (temp -32) * (5.0/9.0);
+}
 
 int main(int argc, const char** argv) {
     vector<string> args;
