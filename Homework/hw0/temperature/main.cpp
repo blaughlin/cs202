@@ -30,8 +30,14 @@ int main(int argc, const char** argv) {
     for (int index = 0; index < argc; index++){
         args.push_back(argv[index]);
     }
-    for (const auto & arg : args) {
-        std::cout << arg << std::endl;
+    char* char_arr;
+    string str_obj = args.at(2);
+    char_arr = &str_obj[0];
+
+    if (args.at(1) == "--ftoc") {
+        cout <<  args.at(2) << " degrees fahrenheit is " << cpp_ftoc(char_arr) << " celsius." << endl;
+    } else if (args.at(1) == "--ctof") {
+        cout <<  args.at(2) << " degrees celsius is " << c_ctof(char_arr) << " fahrenheit." << endl;
     }
     return 0;
 }
