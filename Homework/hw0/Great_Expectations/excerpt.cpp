@@ -12,6 +12,11 @@ using std::string;
 using std::getline;
 #include <fstream>
 using std::ifstream;
+#include <random>
+using std::random_device;
+using std::mt19937;
+#include <algorithm>
+using std::shuffle;
 
 // Reads in lines from book and returns them as a vector
 vector<string> readInBook(string filename){
@@ -51,25 +56,27 @@ vector<vector<string>>  parseBook(vector<string> book) {
     return excerpts;
 }
 
-// Prints out an excerpt from Great Expectations
-void printExcerpt(vector<string> book){
+// Prints out a random excerpt from Great Expectations
+void printExcerpt(vector<vector<string>> excerpts){
+    bool done = false;
+    random_device rd;
+    mt19937 gen(rd());
 
+    while (!done) {
+        shuffle(excerpts.begin(), excerpts.end(), gen);
+        for (auto i : excerpts.at(0)){
+            if ( i != "\r"){
+                cout << i << endl;
+                done = true;
+            }
+        }
+    }
 }
 
 int main() {
     vector<string> book = readInBook("great_expectations.txt");
     vector<vector<string>> excerpts = parseBook(book);
-
-    for (auto i : excerpts) {
-        for(auto j : i){
-            cout << j << endl;
-        }
-    }
-//    for (auto i : book) {
-//        if (i == "\r") cout << "RETURN!" << endl;
-//        cout << i << endl;
-//    }
-
-    std::cout << "Hello, World!" << std::endl;
+    cout << "\nExcerpt: " << endl;
+    printExcerpt(excerpts);
     return 0;
 }

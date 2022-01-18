@@ -15,4 +15,8 @@ string
 -
 fstream
 -
+random
+-
+algorithm
+-
 
