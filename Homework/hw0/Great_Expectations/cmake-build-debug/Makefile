@@ -129,29 +129,29 @@ Great_Expectations/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Great_Expectations.dir/build.make CMakeFiles/Great_Expectations.dir/build
 .PHONY : Great_Expectations/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+excerpt.o: excerpt.cpp.o
+.PHONY : excerpt.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Great_Expectations.dir/build.make CMakeFiles/Great_Expectations.dir/main.cpp.o
-.PHONY : main.cpp.o
+excerpt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Great_Expectations.dir/build.make CMakeFiles/Great_Expectations.dir/excerpt.cpp.o
+.PHONY : excerpt.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+excerpt.i: excerpt.cpp.i
+.PHONY : excerpt.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Great_Expectations.dir/build.make CMakeFiles/Great_Expectations.dir/main.cpp.i
-.PHONY : main.cpp.i
+excerpt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Great_Expectations.dir/build.make CMakeFiles/Great_Expectations.dir/excerpt.cpp.i
+.PHONY : excerpt.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+excerpt.s: excerpt.cpp.s
+.PHONY : excerpt.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Great_Expectations.dir/build.make CMakeFiles/Great_Expectations.dir/main.cpp.s
-.PHONY : main.cpp.s
+excerpt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Great_Expectations.dir/build.make CMakeFiles/Great_Expectations.dir/excerpt.cpp.s
+.PHONY : excerpt.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Great_Expectations"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... excerpt.o"
+	@echo "... excerpt.i"
+	@echo "... excerpt.s"
 .PHONY : help
 
 

@@ -66,27 +66,27 @@ include CMakeFiles/Great_Expectations.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Great_Expectations.dir/flags.make
 
-CMakeFiles/Great_Expectations.dir/main.cpp.o: CMakeFiles/Great_Expectations.dir/flags.make
-CMakeFiles/Great_Expectations.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw0/Great_Expectations/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Great_Expectations.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Great_Expectations.dir/main.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw0/Great_Expectations/main.cpp
+CMakeFiles/Great_Expectations.dir/excerpt.cpp.o: CMakeFiles/Great_Expectations.dir/flags.make
+CMakeFiles/Great_Expectations.dir/excerpt.cpp.o: ../excerpt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw0/Great_Expectations/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Great_Expectations.dir/excerpt.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Great_Expectations.dir/excerpt.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw0/Great_Expectations/excerpt.cpp
 
-CMakeFiles/Great_Expectations.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Great_Expectations.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw0/Great_Expectations/main.cpp > CMakeFiles/Great_Expectations.dir/main.cpp.i
+CMakeFiles/Great_Expectations.dir/excerpt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Great_Expectations.dir/excerpt.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw0/Great_Expectations/excerpt.cpp > CMakeFiles/Great_Expectations.dir/excerpt.cpp.i
 
-CMakeFiles/Great_Expectations.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Great_Expectations.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw0/Great_Expectations/main.cpp -o CMakeFiles/Great_Expectations.dir/main.cpp.s
+CMakeFiles/Great_Expectations.dir/excerpt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Great_Expectations.dir/excerpt.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw0/Great_Expectations/excerpt.cpp -o CMakeFiles/Great_Expectations.dir/excerpt.cpp.s
 
 # Object files for target Great_Expectations
 Great_Expectations_OBJECTS = \
-"CMakeFiles/Great_Expectations.dir/main.cpp.o"
+"CMakeFiles/Great_Expectations.dir/excerpt.cpp.o"
 
 # External object files for target Great_Expectations
 Great_Expectations_EXTERNAL_OBJECTS =
 
-Great_Expectations: CMakeFiles/Great_Expectations.dir/main.cpp.o
+Great_Expectations: CMakeFiles/Great_Expectations.dir/excerpt.cpp.o
 Great_Expectations: CMakeFiles/Great_Expectations.dir/build.make
 Great_Expectations: CMakeFiles/Great_Expectations.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw0/Great_Expectations/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Great_Expectations"

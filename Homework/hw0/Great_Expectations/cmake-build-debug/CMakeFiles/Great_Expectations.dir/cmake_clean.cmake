@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Great_Expectations.dir/main.cpp.o"
+  "CMakeFiles/Great_Expectations.dir/excerpt.cpp.o"
   "Great_Expectations"
   "Great_Expectations.pdb"
 )

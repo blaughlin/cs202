@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw0/Great_Expectations/main.cpp">
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw0/Great_Expectations/excerpt.cpp">
 			<Option target="Great_Expectations"/>
 		</Unit>
 		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw0/Great_Expectations/CMakeLists.txt">

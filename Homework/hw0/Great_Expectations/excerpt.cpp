@@ -38,7 +38,7 @@ vector<string> readInBook(string filename){
 }
 
 int main() {
-
+    vector<string> book = readInBook("great_expectations.txt");
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }
