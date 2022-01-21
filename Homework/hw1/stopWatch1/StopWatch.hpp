@@ -9,10 +9,10 @@
 class StopWatch {
 public:
     StopWatch();
-    double getTimeInSeconds(){};
-    double getTimeInMilliseconds(){};
-    void start(){};
-    void stop(){};
+    double getTimeInSeconds();
+    double getTimeInMilliseconds();
+    void start();
+    void stop();
 
 private:
     double _startTime;
