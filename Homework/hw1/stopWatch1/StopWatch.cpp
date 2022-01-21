@@ -24,14 +24,3 @@ double StopWatch::getTimeInMilliseconds() {
     return std::chrono::duration<double, std::milli>(_stopTime - _startTime).count();
 }
 
-//class StopWatch {
-//public:
-//    double getTimeInSeconds(){};
-//    double getTimeInMilliseconds(){};
-//    void start(){};
-//    void stop(){};
-//
-//private:
-//    double _startTime;
-//    double _stopTime;
-//};

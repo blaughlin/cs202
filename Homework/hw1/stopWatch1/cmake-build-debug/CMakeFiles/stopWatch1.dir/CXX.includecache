@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw1/stopWatch1/StopWatch.cpp
-StopWatch.hpp
-/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw1/stopWatch1/StopWatch.hpp
-chrono
--
-
 /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw1/stopWatch1/StopWatch.hpp
 
 /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw1/stopWatch1/stopWatch1.cpp
 iostream
 -
-chrono
+vector
 -
+random
+-
+algorithm
+-
+StopWatch.hpp
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw1/stopWatch1/StopWatch.hpp
 

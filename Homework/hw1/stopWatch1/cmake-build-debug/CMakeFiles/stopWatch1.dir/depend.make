@@ -5,4 +5,5 @@ CMakeFiles/stopWatch1.dir/StopWatch.cpp.o: \
  ../StopWatch.cpp \
  ../StopWatch.hpp
 CMakeFiles/stopWatch1.dir/stopWatch1.cpp.o: \
+ ../StopWatch.hpp \
  ../stopWatch1.cpp
