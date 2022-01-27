@@ -5,22 +5,23 @@
 #include "StopWatch.hpp"
 #include <chrono>
 
+using namespace std::chrono;
 StopWatch::StopWatch() {
-    _startTime = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+    _startTime = high_resolution_clock::now();
 }
 
 void StopWatch::start() {
-    _startTime = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+    _startTime = high_resolution_clock::now();
 }
 void StopWatch::stop() {
-    _stopTime = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+    _stopTime = high_resolution_clock::now();
 }
 
-double StopWatch::getTimeInSeconds(){
-    return std::chrono::duration<double, std::milli>(_stopTime - _startTime).count()/1000;
+duration<double> StopWatch::getTimeInSeconds(){
+    return duration_cast<duration<double>>(_stopTime - _startTime);
 }
 
-double StopWatch::getTimeInMilliseconds() {
-    return std::chrono::duration<double, std::milli>(_stopTime - _startTime).count();
+duration<double> StopWatch::getTimeInMilliseconds() {
+    return duration_cast<duration<double>>(_stopTime - _startTime) / 1000;
 }
 
