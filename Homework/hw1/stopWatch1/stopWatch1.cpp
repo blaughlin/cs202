@@ -42,25 +42,25 @@ void timeSequential(const vector<int> & data, float trials, int toFind) {
     cout << "Average time is " << totalTime/trials << endl;
 }
 
-//void timeBinary(const vector<int> & data, float trials, int toFind) {
-//    vector<float> times;
-//    StopWatch timer;
-//    for (auto i = 0; i < trials; i++) {
-//        timer.start();
-//        auto found = std::binary_search(data.begin(), data.end(), toFind);
-//        timer.stop();
-//        times.push_back(timer.getTimeInSeconds().count());
-//    }
-//
-//    float totalTime = 0;
-//    // calculate mean time
-//    for (auto i : times) {
-//        totalTime += i;
-//    }
-//    cout << "Average time is " << totalTime/trials << endl;
-//
-//}
-//
+void timeBinary(const vector<int> & data, float trials, int toFind) {
+    vector<float> times;
+    StopWatch timer;
+    for (auto i = 0; i < trials; i++) {
+        timer.start();
+        auto found = std::binary_search(data.begin(), data.end(), toFind);
+        timer.stop();
+        times.push_back(timer.getTimeInSeconds().count());
+    }
+
+    float totalTime = 0;
+    // calculate mean time
+    for (auto i : times) {
+        totalTime += i;
+    }
+    cout << "Average time is " << totalTime/trials << endl;
+
+}
+
 //void timeMaxElement(const vector<int> & data, float trials) {
 //    vector<float> times;
 //    StopWatch timer;
