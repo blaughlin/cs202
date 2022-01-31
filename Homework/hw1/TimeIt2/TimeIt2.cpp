@@ -18,7 +18,8 @@ using std::ifstream;
 using std::random_device;
 using std::mt19937;
 #include <algorithm>
-
+#include <list>
+using std::list;
 // Reads in lines from book and returns them as a vector
 vector<string> readInBook(string filename){
     vector<string> book;
@@ -27,6 +28,30 @@ vector<string> readInBook(string filename){
         cout << "Error reading file." << endl;
     } else {
         while (true){
+            string line;
+            getline(fin, line);
+            if (!fin) {
+                if (fin.eof()) {
+                    cout << "Finished reading file." << endl;
+                } else {
+                    cout << "Error during transmit." << endl;
+                }
+                break;
+            }
+            book.push_back(line);
+        }
+    }
+    return book;
+}
+
+// Reads in lines from book and returns them as a list
+list<string> readInBookList(string filename) {
+    list<string> book;
+    ifstream fin(filename);
+    if (!fin) {
+        cout << "Error reading file." << endl;
+    } else {
+        while (true) {
             string line;
             getline(fin, line);
             if (!fin) {
@@ -58,22 +83,24 @@ vector<vector<string>>  parseBook(vector<string> book) {
 }
 
 // Prints out a random excerpt from Great Expectations
-void printExcerpt(vector<vector<string>> excerpts){
+string  getExcerpt(vector<vector<string>> excerpts){
     bool done = false;
     random_device rd;
     mt19937 gen(rd());
 
     while (!done) {
         shuffle(excerpts.begin(), excerpts.end(), gen);
-        for (auto i : excerpts.at(0)){
+        for (auto i : excerpts.at(0))
             if ( i != "\r"){
+                return i;
                 cout << i << endl;
                 done = true;
             }
-        }
     }
 }
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
+
     return 0;
 }
