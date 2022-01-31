@@ -20,6 +20,9 @@ using std::mt19937;
 #include <algorithm>
 #include <list>
 using std::list;
+#include <map>
+using std::map;
+
 // Reads in lines from book and returns them as a vector
 vector<string> readInBook(string filename){
     vector<string> book;
@@ -68,6 +71,35 @@ list<string> readInBookList(string filename) {
     return book;
 }
 
+// Reads in lines from book and returns them as a map
+map<int,string> readInBookMap(string filename) {
+    map<int,string> book;
+    ifstream fin(filename);
+    int counter = 0;
+    if (!fin) {
+        cout << "Error reading file." << endl;
+    } else {
+        while (true) {
+            string line;
+            getline(fin, line);
+            if (!fin) {
+                if (fin.eof()) {
+                    cout << "Finished reading file." << endl;
+                } else {
+                    cout << "Error during transmit." << endl;
+                }
+                break;
+            }
+            book.insert(std::pair<int, string>(counter, line));
+            counter++;
+        }
+    }
+    return book;
+}
+
+
+
+
 // Parses out section of book between blank lines into a vector
 vector<vector<string>>  parseBook(vector<string> book) {
     vector<vector<string>> excerpts;
@@ -100,6 +132,10 @@ string  getExcerpt(vector<vector<string>> excerpts){
 }
 
 int main() {
+    map<int,string> dracula = readInBookMap("Dracula.txt");
+    for (auto i : dracula){
+        cout << i.second << endl;
+    }
     std::cout << "Hello, World!" << std::endl;
 
     return 0;

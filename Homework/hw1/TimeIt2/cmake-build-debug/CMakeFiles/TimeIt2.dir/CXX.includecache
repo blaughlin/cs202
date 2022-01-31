@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw1/TimeIt2/StopWatch.cpp
-StopWatch.hpp
-/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw1/TimeIt2/StopWatch.hpp
-chrono
--
-
 /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw1/TimeIt2/StopWatch.hpp
 chrono
 -
@@ -32,5 +26,7 @@ random
 algorithm
 -
 list
+-
+map
 -
 
