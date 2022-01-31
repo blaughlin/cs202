@@ -42,6 +42,37 @@ vector<string> readInBook(string filename){
     }
     return book;
 }
+
+// Parses out section of book between blank lines into a vector
+vector<vector<string>>  parseBook(vector<string> book) {
+    vector<vector<string>> excerpts;
+    vector<string> excerpt;
+    for (auto i : book){
+        excerpt.push_back(i);
+        if (i == "\r") {
+            excerpts.push_back(excerpt);
+            excerpt.clear();
+        }
+    }
+    return excerpts;
+}
+
+// Prints out a random excerpt from Great Expectations
+void printExcerpt(vector<vector<string>> excerpts){
+    bool done = false;
+    random_device rd;
+    mt19937 gen(rd());
+
+    while (!done) {
+        shuffle(excerpts.begin(), excerpts.end(), gen);
+        for (auto i : excerpts.at(0)){
+            if ( i != "\r"){
+                cout << i << endl;
+                done = true;
+            }
+        }
+    }
+}
 int main() {
     std::cout << "Hello, World!" << std::endl;
     return 0;
