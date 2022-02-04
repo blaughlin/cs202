@@ -17,7 +17,7 @@ int getLength(const char * s){
     return n;
 }
 
-// copies a C-style string into memory it allocates dynamically
+//  copies a C-style string into memory it allocates dynamically
 char* strdup(const char* s) {
     char *p = new char(*s);
     for (auto i = 0; i < getLength(s); i++) {
