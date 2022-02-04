@@ -14,7 +14,32 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98d5a41b-7ce5-45a5-af4e-bc1af3632e6f" name="Changes" comment="" />
+    <list default="true" id="98d5a41b-7ce5-45a5-af4e-bc1af3632e6f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../hw0/Great_Expectations/cmake-build-debug/CMakeFiles/Great_Expectations.dir/excerpt.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/Great_Expectations/cmake-build-debug/CMakeFiles/Great_Expectations.dir/excerpt.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw0/Great_Expectations/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/Great_Expectations/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw0/Great_Expectations/cmake-build-debug/Great_Expectations" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/Great_Expectations/cmake-build-debug/Great_Expectations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw0/Great_Expectations/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/Great_Expectations/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw0/Great_Expectations/excerpt.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/Great_Expectations/excerpt.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw0/temperature/cmake-build-debug/CMakeFiles/temperature.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/temperature/cmake-build-debug/CMakeFiles/temperature.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw0/temperature/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/temperature/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw0/temperature/cmake-build-debug/temperature" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/temperature/cmake-build-debug/temperature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw0/temperature/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/temperature/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw0/test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw0/test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TimeIt2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TimeIt2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TimeIt2.dir/TimeIt2.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TimeIt2.dir/TimeIt2.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/TimeIt2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/TimeIt2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c_style_strings/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../c_style_strings/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c_style_strings/cmake-build-debug/c_style_strings" beforeDir="false" afterPath="$PROJECT_DIR$/../c_style_strings/cmake-build-debug/c_style_strings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stopWatch1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../stopWatch1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stopWatch1/stopWatch1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../stopWatch1/stopWatch1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Labs/lab02/Square.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Labs/lab02/Square.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Labs/lab02/Square.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Labs/lab02/Square.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Labs/lab03/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Labs/lab03/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Labs/lab03/Square.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Labs/lab03/Square.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Labs/lab03/Square.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Labs/lab03/Square.hpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +51,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="24R9Ij0XBZP84W2pVMrNGcOd4dY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,12 +81,12 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="TimeIt2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TimeIt2" TARGET_NAME="TimeIt2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TimeIt2" RUN_TARGET_NAME="TimeIt2">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TimeIt2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TimeIt2" TARGET_NAME="TimeIt2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TimeIt2" RUN_TARGET_NAME="TimeIt2">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -72,7 +105,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643582453699</updated>
-      <workItem from="1643582458403" duration="3378000" />
+      <workItem from="1643582458403" duration="11385000" />
+      <workItem from="1644006041597" duration="1448000" />
     </task>
     <servers />
   </component>
