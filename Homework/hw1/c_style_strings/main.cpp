@@ -28,7 +28,7 @@ char* strdup(const char* s) {
 
 
 
-//finds the first occurrence of the c-style string x in s
+// finds the first occurrence of the c-style string x in s
 char* findx(const char* s, const char* x) {
     bool found = false;
     char *p = new char(*s);
