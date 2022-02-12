@@ -83,5 +83,16 @@ int main() {
     cout << (book2 < book1) << endl;
     library.sort([](Book & a, Book & b){return a < b;});
     printLibrary(library);
+    cout << "Searching for book in library" << endl;
+    auto it = std::find_if(library.begin(), library.end(), [](Book const & b){
+        return b.title == "Pride and Prejudice";
+    });
+    if (it != library.end() ) {
+        cout << "Found book \"" << it->title << "\" by: " << it->author << endl;
+    } else cout << "Could not find book title" << endl;
+
+    cout << "Inserting The Great Gatsby before Pride and Prejudice" << endl;
+    library.insert(it, book4);
+    printLibrary(library);
     return 0;
 }
