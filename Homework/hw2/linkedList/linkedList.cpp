@@ -8,6 +8,8 @@ using std::endl;
 using std::string;
 #include <list>
 using std::list;
+#include <algorithm>
+using std::sort;
 
 class Book {
 public:
@@ -16,6 +18,9 @@ public:
     string releaseDate;
     string language;
     string producedBy;
+    bool operator < (const Book & b) {
+        return (title < b.title);
+    }
 };
 
 void printLibrary(list<Book> & books) {
@@ -25,6 +30,7 @@ void printLibrary(list<Book> & books) {
 }
 
 
+bool myFunction (Book a, Book b) {return (a.title < b.title);}
 
 int main() {
     // create books
@@ -63,6 +69,19 @@ int main() {
     printLibrary(library);
     cout << "Popping a book to the front of the list" << endl;
     library.pop_front();
+    printLibrary(library);
+    cout << "Pushing a book to the back of the list" << endl;
+    library.push_back(book4);
+    printLibrary(library);
+    cout << "Popping a book to the back of the list" << endl;
+    library.pop_back();
+    library.push_back(book1);
+
+    printLibrary(library);
+
+    cout << (book1 < book2) << endl;
+    cout << (book2 < book1) << endl;
+    library.sort([](Book & a, Book & b){return a < b;});
     printLibrary(library);
     return 0;
 }
