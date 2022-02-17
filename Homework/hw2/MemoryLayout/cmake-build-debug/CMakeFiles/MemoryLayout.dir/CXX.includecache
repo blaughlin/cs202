@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw2/MemoryLayout/MemoryLayout.cpp
+iostream
+-
+
