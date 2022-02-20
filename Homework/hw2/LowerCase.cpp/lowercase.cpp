@@ -6,8 +6,18 @@
 using std::cout;
 using std::endl;
 
-
+// Converts upper case char to lower case char
+void to_lower(char* s) {
+    while (s != NULL && *s != '\0'){
+        if (int(*s) >= 65 && int(*s) <= 90){
+            *s += 32;
+        }
+        ++s;
+    }
+}
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    char word[] = "Hello, World!";
+    to_lower(word);
+    cout << word << endl;
     return 0;
 }
