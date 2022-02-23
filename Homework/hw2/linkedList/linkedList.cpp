@@ -1,7 +1,8 @@
 // linkedList.cpp
 // Bernard Laughlin
 // Creates a linked list of book metadata
-
+#define CATCH_CONFIG_MAIN
+#include "catch.hpp"
 #include <iostream>
 using std::cout;
 using std::endl;
@@ -29,10 +30,8 @@ void printLibrary(list<Book> & books) {
     }
 }
 
+TEST_CASE("Book testing", "[Book]") {
 
-bool myFunction (Book a, Book b) {return (a.title < b.title);}
-
-int main() {
     // create books
     Book book1, book2, book3, book4, book5;
     book1.title = "Frankenstein";
@@ -66,33 +65,47 @@ int main() {
     cout << "Testing of Queue" << endl;
     cout << "Pushing a book to the back of the list" << endl;
     library.push_back(book3);
+    REQUIRE(library.size() == 3);
+
     printLibrary(library);
     cout << "Popping a book to the front of the list" << endl;
     library.pop_front();
     printLibrary(library);
+    REQUIRE(library.size() == 2);
+
     cout << "Pushing a book to the back of the list" << endl;
     library.push_back(book4);
     printLibrary(library);
+    REQUIRE(library.size() == 3);
+
     cout << "Popping a book to the back of the list" << endl;
     library.pop_back();
+    REQUIRE(library.size() == 2);
+
     library.push_back(book1);
+    REQUIRE(library.size() == 3);
 
     printLibrary(library);
-
     cout << (book1 < book2) << endl;
+    REQUIRE((book1 < book2) == 1);
     cout << (book2 < book1) << endl;
+    REQUIRE((book2 < book1) == 0);
+
     library.sort([](Book & a, Book & b){return a < b;});
     printLibrary(library);
     cout << "Searching for book in library" << endl;
     auto it = std::find_if(library.begin(), library.end(), [](Book const & b){
         return b.title == "Pride and Prejudice";
     });
+
     if (it != library.end() ) {
         cout << "Found book \"" << it->title << "\" by: " << it->author << endl;
     } else cout << "Could not find book title" << endl;
+    REQUIRE(it != library.end());
 
     cout << "Inserting The Great Gatsby before Pride and Prejudice" << endl;
     library.insert(it, book4);
     printLibrary(library);
-    return 0;
-}
+
+};
+
