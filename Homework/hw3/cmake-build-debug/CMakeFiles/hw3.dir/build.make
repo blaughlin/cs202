@@ -66,27 +66,27 @@ include CMakeFiles/hw3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/hw3.dir/flags.make
 
-CMakeFiles/hw3.dir/main.cpp.o: CMakeFiles/hw3.dir/flags.make
-CMakeFiles/hw3.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hw3.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw3.dir/main.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/main.cpp
+CMakeFiles/hw3.dir/tokenizer.cpp.o: CMakeFiles/hw3.dir/flags.make
+CMakeFiles/hw3.dir/tokenizer.cpp.o: ../tokenizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hw3.dir/tokenizer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw3.dir/tokenizer.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer.cpp
 
-CMakeFiles/hw3.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw3.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/main.cpp > CMakeFiles/hw3.dir/main.cpp.i
+CMakeFiles/hw3.dir/tokenizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw3.dir/tokenizer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer.cpp > CMakeFiles/hw3.dir/tokenizer.cpp.i
 
-CMakeFiles/hw3.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw3.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/main.cpp -o CMakeFiles/hw3.dir/main.cpp.s
+CMakeFiles/hw3.dir/tokenizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw3.dir/tokenizer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer.cpp -o CMakeFiles/hw3.dir/tokenizer.cpp.s
 
 # Object files for target hw3
 hw3_OBJECTS = \
-"CMakeFiles/hw3.dir/main.cpp.o"
+"CMakeFiles/hw3.dir/tokenizer.cpp.o"
 
 # External object files for target hw3
 hw3_EXTERNAL_OBJECTS =
 
-hw3: CMakeFiles/hw3.dir/main.cpp.o
+hw3: CMakeFiles/hw3.dir/tokenizer.cpp.o
 hw3: CMakeFiles/hw3.dir/build.make
 hw3: CMakeFiles/hw3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hw3"

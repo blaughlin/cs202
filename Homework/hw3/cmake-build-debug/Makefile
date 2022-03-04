@@ -129,29 +129,29 @@ hw3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw3.dir/build.make CMakeFiles/hw3.dir/build
 .PHONY : hw3/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+tokenizer.o: tokenizer.cpp.o
+.PHONY : tokenizer.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw3.dir/build.make CMakeFiles/hw3.dir/main.cpp.o
-.PHONY : main.cpp.o
+tokenizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw3.dir/build.make CMakeFiles/hw3.dir/tokenizer.cpp.o
+.PHONY : tokenizer.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+tokenizer.i: tokenizer.cpp.i
+.PHONY : tokenizer.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw3.dir/build.make CMakeFiles/hw3.dir/main.cpp.i
-.PHONY : main.cpp.i
+tokenizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw3.dir/build.make CMakeFiles/hw3.dir/tokenizer.cpp.i
+.PHONY : tokenizer.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+tokenizer.s: tokenizer.cpp.s
+.PHONY : tokenizer.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw3.dir/build.make CMakeFiles/hw3.dir/main.cpp.s
-.PHONY : main.cpp.s
+tokenizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/hw3.dir/build.make CMakeFiles/hw3.dir/tokenizer.cpp.s
+.PHONY : tokenizer.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hw3"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... tokenizer.o"
+	@echo "... tokenizer.i"
+	@echo "... tokenizer.s"
 .PHONY : help
 
 

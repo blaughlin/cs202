@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/hw3.dir/main.cpp.o"
+  "CMakeFiles/hw3.dir/tokenizer.cpp.o"
   "hw3"
   "hw3.pdb"
 )

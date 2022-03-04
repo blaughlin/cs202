@@ -3,4 +3,4 @@ project(hw3)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(hw3 main.cpp)
+add_executable(hw3 tokenizer.cpp)
