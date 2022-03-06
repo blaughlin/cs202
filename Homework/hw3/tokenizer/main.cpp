@@ -4,6 +4,7 @@
 // line and column each token occurs at.
 
 #include <iostream>
+using std::ostream;
 using std::cout;
 using std::endl;
 #include <string>
@@ -15,10 +16,16 @@ using std::vector;
 #include <fstream>
 using std::istream;
 using std::ifstream;
+using std::fstream;
+using std::ofstream;
 #include <map>
 using std::map;
 #include <algorithm>
 using std::find;
+#include <iomanip>
+using std::setw;
+using std::left;
+using std::right;
 
 struct TokenAndPosition {
     string _token;
@@ -66,7 +73,7 @@ vector<TokenAndPosition> readLines(istream &is){
                         lastLocation = i._column + 1;
                     }
                 }
-                    currentLocation = line.find(word, lastLocation);
+                currentLocation = line.find(word, lastLocation);
             } else {
                 currentLocation = line.find(word);
             }
@@ -88,18 +95,42 @@ vector<TokenAndPosition> readLines(istream &is){
             break;
         }
     }
+    cout << "Done creating tokens" << endl;
     return tokenVector;
 }
 
-int main() {
-    string filename = "sample.txt";
+// Prints tokens
+void printTokens(ostream &os, const vector<TokenAndPosition> &tokens){
+    for (auto token : tokens){
+        cout  << "Line " << right << setw(3) <<token._line <<
+              ", " <<"Column " <<  right << setw(3) << token._column <<
+              ": \"" << token._token << "\""  << endl;
+    }
+
+}
+
+int main(int argc, const char** argv) {
+    vector<string> args;
+    for (int index = 0; index < argc; index++){
+        args.push_back(argv[index]);
+    }
+    cout << args.at(1) << " Is what you typed" << endl;
+    vector<TokenAndPosition> tokens;
+    string filename = args.at(1);
     ifstream fin(filename);
     istream & input = fin;
     if(!fin) {
         cout << "Error reading " << filename << endl;
     } else {
-        vector<TokenAndPosition> tokens = readLines(input);
-        for (auto token : tokens) cout << token._token << " " << token._line << " : " << token._column << endl;
+        tokens = readLines(input);
     }
+    ofstream fout("token.txt");
+    if (!fout) {
+        cout << "Error opening file" << endl;
+    }
+    if (args.size() == 3) {
+        if (args.at(2) == "--lineonly") return 0;
+    }
+    printTokens(fout, tokens);
     return 0;
 }

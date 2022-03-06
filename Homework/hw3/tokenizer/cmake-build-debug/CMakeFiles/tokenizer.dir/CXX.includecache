@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer.cpp
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/main.cpp
 iostream
 -
 string
@@ -20,5 +20,7 @@ fstream
 map
 -
 algorithm
+-
+iomanip
 -
 
