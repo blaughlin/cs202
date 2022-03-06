@@ -15,40 +15,70 @@ using std::vector;
 #include <fstream>
 using std::istream;
 using std::ifstream;
+#include <map>
+using std::map;
+#include <algorithm>
+using std::find;
 
-struct tokenAndPosition {
+struct TokenAndPosition {
     string _token;
     int _line;
     unsigned int _column;
 };
 
+
 // returns a vector of words that are tokens split by white space
-vector<string> lineToTokens(const string &line){
+vector<string> lineToTokens(const string &line) {
     vector<string> tokens;
     stringstream ss(line);
     string word;
-    while (ss >> word){
+    while (ss >> word) {
         tokens.push_back(word);
     }
     return tokens;
 }
 
-// finds the column and row of the tokens
-void readLines(istream &is){
-    int lineNumber = 0;
-    while(true){
-            lineNumber++;
-            string line;
-            getline(is, line);
-            vector<string> tokens = lineToTokens(line);
-            cout << "Line number: " << lineNumber << endl;
-            for (auto word : tokens){
-                // determine number of copies of word in vector
-                std::size_t found = line.find(word);
-                if (found != string::npos) cout << "column: " << found + 1 << " ";
-                cout << word << endl;
+bool isInList(vector<string> s, string word){
+    for (auto token : s) {
+        if (token == word) return true;
+    }
+    return false;
+}
 
+
+// finds the column and row of the tokens
+vector<TokenAndPosition> readLines(istream &is){
+    vector<TokenAndPosition> tokenVector;
+    vector<string> processed;
+    int lineNumber = 0;
+    std::size_t lastLocation = 0;
+    std::size_t currentLocation = 0;
+    while(true){
+        lineNumber++;
+        string line;
+        getline(is, line);
+        vector<string> tokens = lineToTokens(line);
+        for (auto word : tokens) {
+            // check if token has already been seen before and get last location
+            if (find(processed.begin(), processed.end(), word) != processed.end()){
+                for (auto i : tokenVector) {
+                    if (i._token == word) {
+                        lastLocation = i._column + 1;
+                    }
+                }
+                    currentLocation = line.find(word, lastLocation);
+            } else {
+                currentLocation = line.find(word);
             }
+            if (currentLocation != string::npos) {
+                TokenAndPosition tp;
+                tp._token = word;
+                tp._line = lineNumber;
+                tp._column = currentLocation + 1;
+                tokenVector.push_back(tp);
+                processed.push_back(word);
+            }
+        }
         if (!is) {
             if (is.eof()) {
                 cout << "Finished reading file." << endl;
@@ -58,7 +88,7 @@ void readLines(istream &is){
             break;
         }
     }
-
+    return tokenVector;
 }
 
 int main() {
@@ -68,9 +98,8 @@ int main() {
     if(!fin) {
         cout << "Error reading " << filename << endl;
     } else {
-        readLines(input);
+        vector<TokenAndPosition> tokens = readLines(input);
+        for (auto token : tokens) cout << token._token << " " << token._line << " : " << token._column << endl;
     }
-
-    vector<tokenAndPosition> tokens;
     return 0;
 }
