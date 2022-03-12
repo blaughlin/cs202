@@ -17,7 +17,7 @@ int main() {
     if (x >= n) {
         cout << "lhs is  >=" << endl;
     } else cout << "lsh is not >=" << endl;
-
-    cout << n + x << endl;
+    Money y = n+= x;
+    cout << y << endl;
     return 0;
 }
