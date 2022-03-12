@@ -50,6 +50,10 @@ Money & Money::operator-=(const Money &m) {
     return *this;
 }
 
+Money Money::operator-(const Money &m) const {
+    Money temp; temp._value = _value - m._value; return temp;
+}
+
 ostream & operator<<(ostream & out, Money m){
     out << "$" << setprecision(2) << std::fixed<<  m._value; return out;
 }
