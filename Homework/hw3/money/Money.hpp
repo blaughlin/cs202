@@ -25,6 +25,8 @@ public:
     Money operator+(const Money & m) const;
     Money & operator-=(const Money & m);
     Money operator-(const Money & m) const;
+    friend Money operator*(Money const &, Money const &);
+//    friend Complex operator+(Complex const &, Complex const &);
 
 private:
     double _value;

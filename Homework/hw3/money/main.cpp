@@ -19,5 +19,6 @@ int main() {
     } else cout << "lsh is not >=" << endl;
     Money y = n+= x;
     cout << y << endl;
+    cout << 2 * y << endl;
     return 0;
 }
