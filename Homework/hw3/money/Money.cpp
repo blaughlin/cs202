@@ -7,7 +7,7 @@
 using std::setprecision;
 Money::Money(): _value(0.00) {};
 Money::Money(int dollars, int cent): _value((double(dollars) * 100.0 + double(cent)) / 100.0) {};
-
+Money::Money(double amount): _value(amount){};
 
 
 ostream & operator<<(ostream & out, Money m) {

@@ -12,5 +12,7 @@ int main() {
     cout << n << endl;
     Money x  = Money(25,103);
     cout << x << endl;
+    Money z = Money(-0.253);
+    cout << z << endl;
     return 0;
 }

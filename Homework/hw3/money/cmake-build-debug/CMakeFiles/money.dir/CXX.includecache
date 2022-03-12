@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/money/Money.cpp
-Money.hpp
-/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/money/Money.hpp
-iomanip
--
-
 /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/money/Money.hpp
 ostream
 -
+
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/money/main.cpp
+iostream
+-
+Money.hpp
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/money/Money.hpp
 

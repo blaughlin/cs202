@@ -12,6 +12,7 @@ class Money {
 public:
     Money();
     Money(int dollars, int cent);
+    Money(double amount);
     friend ostream & operator<<(ostream & out, Money m);
 private:
     double _value;
