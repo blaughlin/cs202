@@ -10,5 +10,7 @@ using std::endl;
 int main() {
     Money n = Money();
     cout << n << endl;
+    Money x  = Money(25,103);
+    cout << x << endl;
     return 0;
 }
