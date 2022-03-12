@@ -35,6 +35,17 @@ bool Money::operator>=(const Money &m) const {
 bool Money::operator<=(const Money &m) const {
     return _value <= m._value;
 }
+
+Money Money::operator+(const Money &m) const {
+    Money temp; temp._value = _value + m._value; return temp;
+}
+
+//Money & Money::operator+=(const Money &m) {
+//    Money temp(*this);
+//    Money result = temp + c;
+//    return result;
+//}
+
 ostream & operator<<(ostream & out, Money m){
     out << "$" << setprecision(2) << std::fixed<<  m._value; return out;
 }

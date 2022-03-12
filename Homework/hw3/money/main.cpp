@@ -5,8 +5,8 @@
 #include <iostream>
 using std::cout;
 using std::endl;
+#include "Money.hpp"
 
-#include "Money.hpp";
 int main() {
     Money n = Money();
     cout << n << endl;
@@ -17,5 +17,7 @@ int main() {
     if (x >= n) {
         cout << "lhs is  >=" << endl;
     } else cout << "lsh is not >=" << endl;
+
+    cout << n + x << endl;
     return 0;
 }
