@@ -23,6 +23,7 @@ public:
     bool operator>=(const Money & m) const;
     Money & operator+=(const Money & m);
     Money operator+(const Money & m) const;
+    Money & operator-=(const Money & m);
 
 private:
     double _value;
