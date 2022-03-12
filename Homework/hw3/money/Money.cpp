@@ -20,6 +20,13 @@ bool Money::operator!=(const Money &m) const {
     return !(_value == m._value);
 }
 
+bool Money::operator<(const Money &m) const {
+    return _value < m._value;
+}
+
+bool Money::operator>(const Money &m) const {
+    return _value > m._value;
+}
 ostream & operator<<(ostream & out, Money m){
     out << "$" << setprecision(2) << std::fixed<<  m._value; return out;
 }
