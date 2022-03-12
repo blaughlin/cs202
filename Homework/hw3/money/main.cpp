@@ -1,10 +1,14 @@
 // money.cpp
 // Bernard Laughlin 3/12/22
-//
+// Program 2 for cs202 HW3
 
 #include <iostream>
+using std::cout;
+using std::endl;
 
+#include "Money.hpp";
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Money n = Money();
+    cout << n << endl;
     return 0;
 }

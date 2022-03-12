@@ -3,4 +3,11 @@
 //
 
 #include "Money.hpp"
-Money::Money(): _value(0.0);
+#include <iomanip>
+using std::setprecision;
+Money::Money(): _value(0.00) {};
+
+
+ostream & operator<<(ostream & out, Money m) {
+    out << "$" << setprecision(2) << std::fixed<<  m._value; return out;
+};
