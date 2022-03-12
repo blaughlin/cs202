@@ -14,8 +14,8 @@ int main() {
     cout << x << endl;
     Money z = Money(-0.253);
     cout << z << endl;
-    if (x == n) {
-
-    }
+    if (x == x) {
+        cout << "equal amounts" << endl;
+    } else cout << "not equal" << endl;
     return 0;
 }
