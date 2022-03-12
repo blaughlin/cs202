@@ -13,7 +13,9 @@ public:
     Money();
     Money(int dollars, int cent);
     Money(double amount);
+    Money(const Money & m);
     friend ostream & operator<<(ostream & out, Money m);
+    bool operator==(const Money & m);
 private:
     double _value;
 };

@@ -14,5 +14,8 @@ int main() {
     cout << x << endl;
     Money z = Money(-0.253);
     cout << z << endl;
+    if (x == n) {
+
+    }
     return 0;
 }
