@@ -14,8 +14,8 @@ int main() {
     cout << x << endl;
     Money z = Money(-0.253);
     cout << z << endl;
-    if (n < x) {
-        cout << "lhs is less" << endl;
-    } else cout << "rhs is less" << endl;
+    if (x >= n) {
+        cout << "lhs is  >=" << endl;
+    } else cout << "lsh is not >=" << endl;
     return 0;
 }

@@ -18,7 +18,10 @@ public:
     bool operator==(const Money & m) const;
     bool operator!=(const Money & m) const;
     bool operator<(const Money & m) const;
+    bool operator<=(const Money & m) const;
     bool operator>(const Money & m) const;
+    bool operator>=(const Money & m) const;
+
 
 private:
     double _value;
