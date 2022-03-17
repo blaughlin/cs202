@@ -124,12 +124,12 @@ int main(int argc, const char** argv) {
     if (args.size() == 3) {
         if (args.at(2) == "--lineonly"){
             timer.stop();
-            cout << timer.getTimeInSeconds().count() << endl;
+            cout << timer.getTimeInSeconds().count() << " seconds" << endl;
             return 0;
         }
     }
     printTokens(fout, tokens);
     timer.stop();
-    cout << timer.getTimeInSeconds().count() << endl;
+    cout << timer.getTimeInSeconds().count() << " seconds" << endl;
     return 0;
 }

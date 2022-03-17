@@ -6,4 +6,5 @@ CMakeFiles/money.dir/Money.cpp.o: \
  ../Money.hpp
 CMakeFiles/money.dir/main.cpp.o: \
  ../Money.hpp \
+ ../catch.hpp \
  ../main.cpp

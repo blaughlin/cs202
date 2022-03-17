@@ -1,4 +1,4 @@
-//
+// Money.hpp
 // Created by Bernard Laughlin on 3/12/22.
 //
 
@@ -26,8 +26,9 @@ public:
     Money & operator-=(const Money & m);
     Money operator-(const Money & m) const;
     friend Money operator*(Money const &, Money const &);
-//    friend Complex operator+(Complex const &, Complex const &);
-
+    Money & operator*=(const Money & m);
+    friend Money operator/(Money const &, Money const &);
+    Money & operator/=(const Money & m);
 private:
     double _value;
 };
