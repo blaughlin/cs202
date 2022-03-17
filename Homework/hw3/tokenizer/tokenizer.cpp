@@ -24,8 +24,8 @@ using std::map;
 using std::find;
 #include <iomanip>
 using std::setw;
-using std::left;
 using std::right;
+#include "StopWatch.hpp"
 
 struct TokenAndPosition {
     string _token;
@@ -45,18 +45,10 @@ vector<string> lineToTokens(const string &line) {
     return tokens;
 }
 
-bool isInList(vector<string> s, string word){
-    for (auto token : s) {
-        if (token == word) return true;
-    }
-    return false;
-}
-
-
 // finds the column and row of the tokens
 vector<TokenAndPosition> readLines(istream &is){
     vector<TokenAndPosition> tokenVector;
-    vector<string> processed;
+//    vector<string> processed;
     int lineNumber = 0;
     std::size_t lastLocation = 0;
     std::size_t currentLocation = 0;
@@ -65,6 +57,7 @@ vector<TokenAndPosition> readLines(istream &is){
         string line;
         getline(is, line);
         vector<string> tokens = lineToTokens(line);
+        vector<string> processed;
         for (auto word : tokens) {
             // check if token has already been seen before and get last location
             if (find(processed.begin(), processed.end(), word) != processed.end()){
@@ -99,22 +92,22 @@ vector<TokenAndPosition> readLines(istream &is){
     return tokenVector;
 }
 
-// Prints tokens
+// Prints tokens, their line and column number
 void printTokens(ostream &os, const vector<TokenAndPosition> &tokens){
     for (auto token : tokens){
         cout  << "Line " << right << setw(3) <<token._line <<
               ", " <<"Column " <<  right << setw(3) << token._column <<
               ": \"" << token._token << "\""  << endl;
     }
-
 }
 
 int main(int argc, const char** argv) {
+    StopWatch timer;
+    timer.start();
     vector<string> args;
     for (int index = 0; index < argc; index++){
         args.push_back(argv[index]);
     }
-    cout << args.at(1) << " Is what you typed" << endl;
     vector<TokenAndPosition> tokens;
     string filename = args.at(1);
     ifstream fin(filename);
@@ -129,8 +122,14 @@ int main(int argc, const char** argv) {
         cout << "Error opening file" << endl;
     }
     if (args.size() == 3) {
-        if (args.at(2) == "--lineonly") return 0;
+        if (args.at(2) == "--lineonly"){
+            timer.stop();
+            cout << timer.getTimeInSeconds().count() << endl;
+            return 0;
+        }
     }
     printTokens(fout, tokens);
+    timer.stop();
+    cout << timer.getTimeInSeconds().count() << endl;
     return 0;
 }

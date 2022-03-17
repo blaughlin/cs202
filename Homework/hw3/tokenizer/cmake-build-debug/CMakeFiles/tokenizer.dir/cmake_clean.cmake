@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tokenizer.dir/main.cpp.o"
+  "CMakeFiles/tokenizer.dir/StopWatch.cpp.o"
+  "CMakeFiles/tokenizer.dir/tokenizer.cpp.o"
   "tokenizer"
   "tokenizer.pdb"
 )

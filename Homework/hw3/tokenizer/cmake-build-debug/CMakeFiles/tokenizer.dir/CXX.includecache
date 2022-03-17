@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/main.cpp
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/StopWatch.hpp
+chrono
+-
+
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/tokenizer.cpp
 iostream
 -
 string
@@ -23,4 +27,6 @@ algorithm
 -
 iomanip
 -
+StopWatch.hpp
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/StopWatch.hpp
 

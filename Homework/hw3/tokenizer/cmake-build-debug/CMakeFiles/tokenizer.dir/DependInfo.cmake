@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/main.cpp" "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/cmake-build-debug/CMakeFiles/tokenizer.dir/main.cpp.o"
+  "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/StopWatch.cpp" "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/cmake-build-debug/CMakeFiles/tokenizer.dir/StopWatch.cpp.o"
+  "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/tokenizer.cpp" "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/cmake-build-debug/CMakeFiles/tokenizer.dir/tokenizer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

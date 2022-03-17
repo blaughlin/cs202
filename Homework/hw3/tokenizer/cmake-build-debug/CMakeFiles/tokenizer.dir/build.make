@@ -66,30 +66,45 @@ include CMakeFiles/tokenizer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tokenizer.dir/flags.make
 
-CMakeFiles/tokenizer.dir/main.cpp.o: CMakeFiles/tokenizer.dir/flags.make
-CMakeFiles/tokenizer.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tokenizer.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tokenizer.dir/main.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/main.cpp
+CMakeFiles/tokenizer.dir/tokenizer.cpp.o: CMakeFiles/tokenizer.dir/flags.make
+CMakeFiles/tokenizer.dir/tokenizer.cpp.o: ../tokenizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tokenizer.dir/tokenizer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tokenizer.dir/tokenizer.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/tokenizer.cpp
 
-CMakeFiles/tokenizer.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tokenizer.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/main.cpp > CMakeFiles/tokenizer.dir/main.cpp.i
+CMakeFiles/tokenizer.dir/tokenizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tokenizer.dir/tokenizer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/tokenizer.cpp > CMakeFiles/tokenizer.dir/tokenizer.cpp.i
 
-CMakeFiles/tokenizer.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tokenizer.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/main.cpp -o CMakeFiles/tokenizer.dir/main.cpp.s
+CMakeFiles/tokenizer.dir/tokenizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tokenizer.dir/tokenizer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/tokenizer.cpp -o CMakeFiles/tokenizer.dir/tokenizer.cpp.s
+
+CMakeFiles/tokenizer.dir/StopWatch.cpp.o: CMakeFiles/tokenizer.dir/flags.make
+CMakeFiles/tokenizer.dir/StopWatch.cpp.o: ../StopWatch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tokenizer.dir/StopWatch.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tokenizer.dir/StopWatch.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/StopWatch.cpp
+
+CMakeFiles/tokenizer.dir/StopWatch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tokenizer.dir/StopWatch.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/StopWatch.cpp > CMakeFiles/tokenizer.dir/StopWatch.cpp.i
+
+CMakeFiles/tokenizer.dir/StopWatch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tokenizer.dir/StopWatch.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/StopWatch.cpp -o CMakeFiles/tokenizer.dir/StopWatch.cpp.s
 
 # Object files for target tokenizer
 tokenizer_OBJECTS = \
-"CMakeFiles/tokenizer.dir/main.cpp.o"
+"CMakeFiles/tokenizer.dir/tokenizer.cpp.o" \
+"CMakeFiles/tokenizer.dir/StopWatch.cpp.o"
 
 # External object files for target tokenizer
 tokenizer_EXTERNAL_OBJECTS =
 
-tokenizer: CMakeFiles/tokenizer.dir/main.cpp.o
+tokenizer: CMakeFiles/tokenizer.dir/tokenizer.cpp.o
+tokenizer: CMakeFiles/tokenizer.dir/StopWatch.cpp.o
 tokenizer: CMakeFiles/tokenizer.dir/build.make
 tokenizer: CMakeFiles/tokenizer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tokenizer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tokenizer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tokenizer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

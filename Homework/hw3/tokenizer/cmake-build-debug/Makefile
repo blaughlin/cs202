@@ -129,29 +129,53 @@ tokenizer/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tokenizer.dir/build.make CMakeFiles/tokenizer.dir/build
 .PHONY : tokenizer/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+StopWatch.o: StopWatch.cpp.o
+.PHONY : StopWatch.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tokenizer.dir/build.make CMakeFiles/tokenizer.dir/main.cpp.o
-.PHONY : main.cpp.o
+StopWatch.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tokenizer.dir/build.make CMakeFiles/tokenizer.dir/StopWatch.cpp.o
+.PHONY : StopWatch.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+StopWatch.i: StopWatch.cpp.i
+.PHONY : StopWatch.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tokenizer.dir/build.make CMakeFiles/tokenizer.dir/main.cpp.i
-.PHONY : main.cpp.i
+StopWatch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tokenizer.dir/build.make CMakeFiles/tokenizer.dir/StopWatch.cpp.i
+.PHONY : StopWatch.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+StopWatch.s: StopWatch.cpp.s
+.PHONY : StopWatch.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tokenizer.dir/build.make CMakeFiles/tokenizer.dir/main.cpp.s
-.PHONY : main.cpp.s
+StopWatch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tokenizer.dir/build.make CMakeFiles/tokenizer.dir/StopWatch.cpp.s
+.PHONY : StopWatch.cpp.s
+
+tokenizer.o: tokenizer.cpp.o
+.PHONY : tokenizer.o
+
+# target to build an object file
+tokenizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tokenizer.dir/build.make CMakeFiles/tokenizer.dir/tokenizer.cpp.o
+.PHONY : tokenizer.cpp.o
+
+tokenizer.i: tokenizer.cpp.i
+.PHONY : tokenizer.i
+
+# target to preprocess a source file
+tokenizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tokenizer.dir/build.make CMakeFiles/tokenizer.dir/tokenizer.cpp.i
+.PHONY : tokenizer.cpp.i
+
+tokenizer.s: tokenizer.cpp.s
+.PHONY : tokenizer.s
+
+# target to generate assembly for a file
+tokenizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tokenizer.dir/build.make CMakeFiles/tokenizer.dir/tokenizer.cpp.s
+.PHONY : tokenizer.cpp.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tokenizer"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... StopWatch.o"
+	@echo "... StopWatch.i"
+	@echo "... StopWatch.s"
+	@echo "... tokenizer.o"
+	@echo "... tokenizer.i"
+	@echo "... tokenizer.s"
 .PHONY : help
 
 

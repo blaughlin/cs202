@@ -80,7 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/main.cpp">
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/StopWatch.cpp">
+			<Option target="tokenizer"/>
+		</Unit>
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/StopWatch.hpp">
+			<Option target="tokenizer"/>
+		</Unit>
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/tokenizer.cpp">
 			<Option target="tokenizer"/>
 		</Unit>
 		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw3/tokenizer/CMakeLists.txt">
