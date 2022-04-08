@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/main.cpp" "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/cmake-build-debug/CMakeFiles/boxes.dir/main.cpp.o"
+  "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/Box.cpp" "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/cmake-build-debug/CMakeFiles/boxes.dir/Box.cpp.o"
+  "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/boxes.cpp" "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/cmake-build-debug/CMakeFiles/boxes.dir/boxes.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

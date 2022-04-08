@@ -66,30 +66,45 @@ include CMakeFiles/boxes.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/boxes.dir/flags.make
 
-CMakeFiles/boxes.dir/main.cpp.o: CMakeFiles/boxes.dir/flags.make
-CMakeFiles/boxes.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/boxes.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boxes.dir/main.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/main.cpp
+CMakeFiles/boxes.dir/boxes.cpp.o: CMakeFiles/boxes.dir/flags.make
+CMakeFiles/boxes.dir/boxes.cpp.o: ../boxes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/boxes.dir/boxes.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boxes.dir/boxes.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/boxes.cpp
 
-CMakeFiles/boxes.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boxes.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/main.cpp > CMakeFiles/boxes.dir/main.cpp.i
+CMakeFiles/boxes.dir/boxes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boxes.dir/boxes.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/boxes.cpp > CMakeFiles/boxes.dir/boxes.cpp.i
 
-CMakeFiles/boxes.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boxes.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/main.cpp -o CMakeFiles/boxes.dir/main.cpp.s
+CMakeFiles/boxes.dir/boxes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boxes.dir/boxes.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/boxes.cpp -o CMakeFiles/boxes.dir/boxes.cpp.s
+
+CMakeFiles/boxes.dir/Box.cpp.o: CMakeFiles/boxes.dir/flags.make
+CMakeFiles/boxes.dir/Box.cpp.o: ../Box.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/boxes.dir/Box.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boxes.dir/Box.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/Box.cpp
+
+CMakeFiles/boxes.dir/Box.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/boxes.dir/Box.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/Box.cpp > CMakeFiles/boxes.dir/Box.cpp.i
+
+CMakeFiles/boxes.dir/Box.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/boxes.dir/Box.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/Box.cpp -o CMakeFiles/boxes.dir/Box.cpp.s
 
 # Object files for target boxes
 boxes_OBJECTS = \
-"CMakeFiles/boxes.dir/main.cpp.o"
+"CMakeFiles/boxes.dir/boxes.cpp.o" \
+"CMakeFiles/boxes.dir/Box.cpp.o"
 
 # External object files for target boxes
 boxes_EXTERNAL_OBJECTS =
 
-boxes: CMakeFiles/boxes.dir/main.cpp.o
+boxes: CMakeFiles/boxes.dir/boxes.cpp.o
+boxes: CMakeFiles/boxes.dir/Box.cpp.o
 boxes: CMakeFiles/boxes.dir/build.make
 boxes: CMakeFiles/boxes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable boxes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable boxes"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/boxes.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

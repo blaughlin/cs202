@@ -80,7 +80,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/main.cpp">
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/Box.cpp">
+			<Option target="boxes"/>
+		</Unit>
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/Box.hpp">
+			<Option target="boxes"/>
+		</Unit>
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/boxes.cpp">
 			<Option target="boxes"/>
 		</Unit>
 		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/CMakeLists.txt">

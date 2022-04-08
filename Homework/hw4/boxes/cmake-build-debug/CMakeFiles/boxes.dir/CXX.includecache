@@ -6,11 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/main.cpp
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/box.hpp
+iostream
+-
+
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/boxes.cpp
+box.hpp
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/box.hpp
+box.hpp
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/boxes/box.hpp
 iostream
 -
 string
 -
-fstream
+stdexcept
+-
+sstream
+-
+memory
 -
 

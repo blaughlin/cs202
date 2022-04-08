@@ -129,29 +129,53 @@ boxes/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/boxes.dir/build.make CMakeFiles/boxes.dir/build
 .PHONY : boxes/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+Box.o: Box.cpp.o
+.PHONY : Box.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/boxes.dir/build.make CMakeFiles/boxes.dir/main.cpp.o
-.PHONY : main.cpp.o
+Box.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boxes.dir/build.make CMakeFiles/boxes.dir/Box.cpp.o
+.PHONY : Box.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+Box.i: Box.cpp.i
+.PHONY : Box.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/boxes.dir/build.make CMakeFiles/boxes.dir/main.cpp.i
-.PHONY : main.cpp.i
+Box.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boxes.dir/build.make CMakeFiles/boxes.dir/Box.cpp.i
+.PHONY : Box.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+Box.s: Box.cpp.s
+.PHONY : Box.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/boxes.dir/build.make CMakeFiles/boxes.dir/main.cpp.s
-.PHONY : main.cpp.s
+Box.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boxes.dir/build.make CMakeFiles/boxes.dir/Box.cpp.s
+.PHONY : Box.cpp.s
+
+boxes.o: boxes.cpp.o
+.PHONY : boxes.o
+
+# target to build an object file
+boxes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boxes.dir/build.make CMakeFiles/boxes.dir/boxes.cpp.o
+.PHONY : boxes.cpp.o
+
+boxes.i: boxes.cpp.i
+.PHONY : boxes.i
+
+# target to preprocess a source file
+boxes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boxes.dir/build.make CMakeFiles/boxes.dir/boxes.cpp.i
+.PHONY : boxes.cpp.i
+
+boxes.s: boxes.cpp.s
+.PHONY : boxes.s
+
+# target to generate assembly for a file
+boxes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/boxes.dir/build.make CMakeFiles/boxes.dir/boxes.cpp.s
+.PHONY : boxes.cpp.s
 
 # Help Target
 help:
@@ -162,9 +186,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... boxes"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Box.o"
+	@echo "... Box.i"
+	@echo "... Box.s"
+	@echo "... boxes.o"
+	@echo "... boxes.i"
+	@echo "... boxes.s"
 .PHONY : help
 
 

@@ -3,4 +3,4 @@ project(boxes)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(boxes main.cpp)
+add_executable(boxes boxes.cpp Box.cpp Box.hpp)
