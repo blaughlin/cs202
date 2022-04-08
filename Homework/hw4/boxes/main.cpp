@@ -65,12 +65,37 @@ public:
     }
 };
 
+
+class CheckeredBox: public Box {
+public:
+    CheckeredBox() : Box() {}
+    CheckeredBox(int w, int h): Box(w,h) {}
+    virtual string type() {return "CheckeredBox";}
+    virtual void print (ostream & os){
+        for (int i = 0; i <= getHeight() -1; i++){
+            for (auto j = 0; j <= getWidth() -1; j++){
+                if (i % 2 == 0) {
+                    if (j % 2 == 0) {
+                        cout << "x";
+                    } else cout << " ";
+                } else {
+                    if (j % 2 == 0) {
+                        cout << " ";
+                    } else cout << "x";
+                }
+            }
+            os << endl;
+        }
+    }
+};
+
 int main() {
     std::ofstream stream("test.txt");
     FilledBox a;
     FilledBox  b(3,4) ;
     b.print(stream);
     HallowBox h(10,5);
-    cout << h << endl;
+    CheckeredBox c(4,4);
+    cout << c << endl;
     return 0;
 }
