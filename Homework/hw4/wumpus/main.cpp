@@ -36,6 +36,9 @@ struct Cave {
 class Game {
 public:
     string getRandomDirection(mt19937 & seed){
+        std::uniform_int_distribution<int> distrib(0,3);
+        vector<string> directions = {"north", "south", "east", "west"};
+        return directions.at(distrib(seed));
     }
 
     void createRooms(int n) {
