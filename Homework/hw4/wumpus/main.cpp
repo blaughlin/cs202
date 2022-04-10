@@ -40,8 +40,73 @@ public:
         vector<string> directions = {"north", "south", "east", "west"};
         return directions.at(distrib(seed));
     }
+    void connectRooms(Cave & currentRoom , vector<Cave> & needsRooms, int & count,mt19937 & seed, int roomsToMake) {
+        for (auto i = 0; i < 3; i++) {
+            if (count >= roomsToMake) break;
+            Cave newRoom;
+            count++;
+            newRoom.id = count;
+            string direction = getRandomDirection(seed);
+            bool isConnected = false;
+            while (true) {
+                // check if room is not already connected
+                if (direction == "north") {
+                    if (currentRoom.north == NULL) break;
+                } else if (direction == "south") {
+                    if (currentRoom.south == NULL) break;
+                } else if (direction == "east") {
+                    if (currentRoom.east == NULL) break;
+                } else if (direction == "west") {
+                    cout << "checking if connected in west" << endl;
+                    if (currentRoom.west == NULL) {
+                        cout << "null" << endl;
+                        break;
+                    } else {
+                        cout << " not null" << endl;
+                    }
+                }
+                direction = getRandomDirection(seed);
+            }
+            if (direction == "north") {
+                currentRoom.north = &newRoom;
+                newRoom.south = &currentRoom;
+            } else if (direction == "south") {
+                currentRoom.south = &newRoom;
+                newRoom.north = &currentRoom;
+            } else if (direction == "east") {
+                currentRoom.east = &newRoom;
+                newRoom.west = &currentRoom;
+            } else if (direction == "west") {
+                currentRoom.west = &newRoom;
+                newRoom.east = &currentRoom;
+            }
+            needsRooms.push_back(newRoom);
+            cout << "Created room: " << newRoom.id << " it is  " << direction <<  " of room " << currentRoom.id << endl;
+        }
+    }
 
     void createRooms(int n) {
+        mt19937 gen(7);
+        int roomCount = 0;
+        vector<Cave> needsRooms;
+        while (roomCount < n) {
+            cout << "Start of creation" << endl;
+            roomCount++;
+            Cave currentRoom;
+            currentRoom.id = roomCount;
+            cout << "Created room: " << currentRoom.id << endl;
+            //create connecting rooms
+            connectRooms(currentRoom, needsRooms, roomCount, gen, n);
+            while (true) {
+                if (roomCount >= n) break;
+                currentRoom = needsRooms.at(needsRooms.size() - 1);
+                needsRooms.pop_back();
+                connectRooms(currentRoom, needsRooms, roomCount, gen, n);
+            }
+            for (auto r: needsRooms) {
+                cout << "Room " << r.id << endl;
+            }
+        }
     }
 private:
     vector<Cave> rooms;
