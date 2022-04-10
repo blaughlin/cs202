@@ -35,11 +35,35 @@ struct Cave {
 
 class Game {
 public:
+    Game()  { createRooms(10);}
     string getRandomDirection(mt19937 & seed){
         std::uniform_int_distribution<int> distrib(0,3);
         vector<string> directions = {"north", "south", "east", "west"};
         return directions.at(distrib(seed));
     }
+
+    void printMap(Cave room) {
+        cout << "You are in room " << room.id << endl;
+        for (auto room : rooms){
+            cout << "room: " <<  room.id << endl;
+        }
+
+        // find connecting rooms
+        if (room.north != nullptr) {
+            cout << "There is a room north" << endl;
+        }
+        if (room.south) {
+            cout << "There is a room south" << endl;
+        }
+        if (room.east != nullptr) {
+            cout << "There is a room east" << endl;
+        }
+        if (room.west != nullptr) {
+            cout << "There is a room west" << endl;
+        }
+
+    }
+
     void connectRooms(Cave & currentRoom , vector<Cave> & needsRooms, int & count,mt19937 & seed, int roomsToMake) {
         for (auto i = 0; i < 3; i++) {
             if (count >= roomsToMake) break;
@@ -81,6 +105,7 @@ public:
                 newRoom.east = &currentRoom;
             }
             needsRooms.push_back(newRoom);
+            rooms.push_back(newRoom);
             cout << "Created room: " << newRoom.id << " it is  " << direction <<  " of room " << currentRoom.id << endl;
         }
     }
@@ -92,14 +117,13 @@ public:
         while (roomCount < n) {
             cout << "Start of creation" << endl;
             roomCount++;
-            Cave currentRoom;
-            currentRoom.id = roomCount;
-            cout << "Created room: " << currentRoom.id << endl;
+            entrance.id = roomCount;
+            cout << "Created room: " << entrance.id << endl;
             //create connecting rooms
-            connectRooms(currentRoom, needsRooms, roomCount, gen, n);
+            connectRooms(entrance, needsRooms, roomCount, gen, n);
             while (true) {
                 if (roomCount >= n) break;
-                currentRoom = needsRooms.at(needsRooms.size() - 1);
+                Cave currentRoom = needsRooms.at(needsRooms.size() - 1);
                 needsRooms.pop_back();
                 connectRooms(currentRoom, needsRooms, roomCount, gen, n);
             }
@@ -109,11 +133,13 @@ public:
         }
     }
 private:
-    vector<Cave> rooms;
+    vector<Cave>  rooms;
     bool isGameOver = false;
+    Cave entrance;
 };
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
+    Game g;
     return 0;
 }
