@@ -33,6 +33,18 @@ struct Cave {
     Cave* west = NULL;
 };
 
+class Game {
+public:
+    string getRandomDirection(mt19937 & seed){
+    }
+
+    void createRooms(int n) {
+    }
+private:
+    vector<Cave> rooms;
+    bool isGameOver = false;
+};
+
 int main() {
     std::cout << "Hello, World!" << std::endl;
     return 0;
