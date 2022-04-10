@@ -1,6 +1,9 @@
 #include <iostream>
 using std::cout;
 using std::endl;
+using std::cin;
+#include <sstream>
+using std::istringstream;
 using std::string;
 #include <vector>
 using std::vector;
@@ -35,7 +38,12 @@ struct Cave {
 
 class Game {
 public:
-    Game()  { createRooms(10);}
+    Game()  {
+        createRooms(10);
+        printMap(entrance);
+        getInput();
+
+    }
     string getRandomDirection(mt19937 & seed){
         std::uniform_int_distribution<int> distrib(0,3);
         vector<string> directions = {"north", "south", "east", "west"};
@@ -43,10 +51,9 @@ public:
     }
 
     void printMap(Cave room) {
+        cout << "--------------------------------" << endl;
         cout << "You are in room " << room.id << endl;
-        for (auto room : rooms){
-            cout << "room: " <<  room.id << endl;
-        }
+        cout << "--------------------------------" << endl;
 
         // find connecting rooms
         if (room.north != nullptr) {
@@ -61,7 +68,30 @@ public:
         if (room.west != nullptr) {
             cout << "There is a room west" << endl;
         }
+        cout << "--------------------------------" << endl;
 
+
+    }
+
+    void getInput(){
+        string input;
+        while (true) {
+            cout << "Enter n to go north, s to go south, e to go east, w to go west." << endl;
+            cout << "or direction followed by a to shoot an arrow in that direction:";
+            getline(cin, input);
+            istringstream istream(input);
+            istream >> choice;
+            if (!istream) {
+                cout << "Invalid input!." << endl;
+            } else if (choice != "n" && choice != "s" && choice != "e" && choice != "w" &&
+                    choice != "an" && choice != "as" && choice != "ae" && choice != "aw") {
+                cout << "Invalid input" << endl;
+//            } else if (choice != "n" || choice != "s" || choice != "e" || choice != "w" ||
+//                    choice != "an" || choice != "as" || choice != "ae" || choice != "aw" ) {
+//                cout << "Invalid input" << endl;
+            } else  break;
+
+        }
     }
 
     void connectRooms(Cave & currentRoom , vector<Cave> & needsRooms, int & count,mt19937 & seed, int roomsToMake) {
@@ -136,6 +166,7 @@ private:
     vector<Cave>  rooms;
     bool isGameOver = false;
     Cave entrance;
+    string choice;
 };
 
 int main() {
