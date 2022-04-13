@@ -66,27 +66,27 @@ include CMakeFiles/wumpus.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/wumpus.dir/flags.make
 
-CMakeFiles/wumpus.dir/main.cpp.o: CMakeFiles/wumpus.dir/flags.make
-CMakeFiles/wumpus.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/wumpus.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/wumpus.dir/main.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/main.cpp
+CMakeFiles/wumpus.dir/wumpus.cpp.o: CMakeFiles/wumpus.dir/flags.make
+CMakeFiles/wumpus.dir/wumpus.cpp.o: ../wumpus.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/wumpus.dir/wumpus.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/wumpus.dir/wumpus.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/wumpus.cpp
 
-CMakeFiles/wumpus.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wumpus.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/main.cpp > CMakeFiles/wumpus.dir/main.cpp.i
+CMakeFiles/wumpus.dir/wumpus.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wumpus.dir/wumpus.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/wumpus.cpp > CMakeFiles/wumpus.dir/wumpus.cpp.i
 
-CMakeFiles/wumpus.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wumpus.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/main.cpp -o CMakeFiles/wumpus.dir/main.cpp.s
+CMakeFiles/wumpus.dir/wumpus.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wumpus.dir/wumpus.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/wumpus.cpp -o CMakeFiles/wumpus.dir/wumpus.cpp.s
 
 # Object files for target wumpus
 wumpus_OBJECTS = \
-"CMakeFiles/wumpus.dir/main.cpp.o"
+"CMakeFiles/wumpus.dir/wumpus.cpp.o"
 
 # External object files for target wumpus
 wumpus_EXTERNAL_OBJECTS =
 
-wumpus: CMakeFiles/wumpus.dir/main.cpp.o
+wumpus: CMakeFiles/wumpus.dir/wumpus.cpp.o
 wumpus: CMakeFiles/wumpus.dir/build.make
 wumpus: CMakeFiles/wumpus.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable wumpus"

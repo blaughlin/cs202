@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/wumpus.dir/main.cpp.o"
+  "CMakeFiles/wumpus.dir/wumpus.cpp.o"
   "wumpus"
   "wumpus.pdb"
 )

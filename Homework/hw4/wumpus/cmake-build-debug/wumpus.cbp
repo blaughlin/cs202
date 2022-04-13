@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/main.cpp">
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/wumpus.cpp">
 			<Option target="wumpus"/>
 		</Unit>
 		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/CMakeLists.txt">

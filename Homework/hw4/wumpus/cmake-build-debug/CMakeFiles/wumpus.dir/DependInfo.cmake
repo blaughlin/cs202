@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/main.cpp" "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/cmake-build-debug/CMakeFiles/wumpus.dir/main.cpp.o"
+  "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/wumpus.cpp" "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/cmake-build-debug/CMakeFiles/wumpus.dir/wumpus.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

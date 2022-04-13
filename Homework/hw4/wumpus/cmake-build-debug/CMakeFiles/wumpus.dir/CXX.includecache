@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/main.cpp
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw4/wumpus/wumpus.cpp
 iostream
 -
 sstream

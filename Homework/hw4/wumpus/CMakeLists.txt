@@ -3,4 +3,4 @@ project(wumpus)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(wumpus main.cpp)
+add_executable(wumpus wumpus.cpp)

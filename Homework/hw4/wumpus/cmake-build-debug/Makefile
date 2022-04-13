@@ -129,29 +129,29 @@ wumpus/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/wumpus.dir/build.make CMakeFiles/wumpus.dir/build
 .PHONY : wumpus/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+wumpus.o: wumpus.cpp.o
+.PHONY : wumpus.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wumpus.dir/build.make CMakeFiles/wumpus.dir/main.cpp.o
-.PHONY : main.cpp.o
+wumpus.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wumpus.dir/build.make CMakeFiles/wumpus.dir/wumpus.cpp.o
+.PHONY : wumpus.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+wumpus.i: wumpus.cpp.i
+.PHONY : wumpus.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wumpus.dir/build.make CMakeFiles/wumpus.dir/main.cpp.i
-.PHONY : main.cpp.i
+wumpus.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wumpus.dir/build.make CMakeFiles/wumpus.dir/wumpus.cpp.i
+.PHONY : wumpus.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+wumpus.s: wumpus.cpp.s
+.PHONY : wumpus.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/wumpus.dir/build.make CMakeFiles/wumpus.dir/main.cpp.s
-.PHONY : main.cpp.s
+wumpus.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wumpus.dir/build.make CMakeFiles/wumpus.dir/wumpus.cpp.s
+.PHONY : wumpus.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... wumpus"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... wumpus.o"
+	@echo "... wumpus.i"
+	@echo "... wumpus.s"
 .PHONY : help
 
 

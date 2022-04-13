@@ -57,11 +57,6 @@
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="wumpus" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="wumpus" TARGET_NAME="wumpus" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="wumpus" RUN_TARGET_NAME="wumpus">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -81,7 +76,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649471709432</updated>
-      <workItem from="1649471713627" duration="18861000" />
+      <workItem from="1649471713627" duration="42069000" />
+      <workItem from="1649704237341" duration="376000" />
+      <workItem from="1649706730034" duration="13157000" />
+      <workItem from="1649726877805" duration="11018000" />
     </task>
     <servers />
   </component>
