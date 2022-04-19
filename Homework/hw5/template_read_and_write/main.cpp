@@ -11,16 +11,37 @@ using std::ios;
 #include <string>
 using std::string;
 
+// Writes out an int to binary file
 void myWriteInt(fstream & outputStream, int value){
     outputStream.open("output.dat", ios::out | ios::binary);
     outputStream.write(reinterpret_cast<const char *>(& value), sizeof(value));
     outputStream.close();
 }
 
+// Reads in an int from a binary file
+void myReadInt(fstream & inputStream, int & value) {
+    inputStream.open("output.dat", ios::in | ios::binary);
+    if (!inputStream) { cout << "Could not open file" << endl;
+        exit(1);
+    }
+    inputStream.read(reinterpret_cast<char *>(&value),sizeof(value));
+    if (!inputStream) {
+        if (inputStream.eof()) {
+            cout << "EOF" << endl;
+            exit(1);
+        } else {
+            cout << "READ ERROR" << endl;
+            exit(1);
+        }
+    }
+}
+
 int main() {
     fstream f;
     int n = 22;
     myWriteInt(f, n);
-    std::cout << "Hello, World!" << std::endl;
+    int j;
+    myReadInt(f, j);
+    cout << "J is equal to " << j << endl;
     return 0;
 }
