@@ -83,6 +83,12 @@
 		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/main.cpp">
 			<Option target="template_read_and_write"/>
 		</Unit>
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/myreadwrite.cpp">
+			<Option target="template_read_and_write"/>
+		</Unit>
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/myreadwrite.hpp">
+			<Option target="template_read_and_write"/>
+		</Unit>
 		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

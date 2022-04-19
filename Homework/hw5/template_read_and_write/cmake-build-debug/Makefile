@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_read_and_write.dir/build.make CMakeFiles/template_read_and_write.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+myreadwrite.o: myreadwrite.cpp.o
+.PHONY : myreadwrite.o
+
+# target to build an object file
+myreadwrite.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_read_and_write.dir/build.make CMakeFiles/template_read_and_write.dir/myreadwrite.cpp.o
+.PHONY : myreadwrite.cpp.o
+
+myreadwrite.i: myreadwrite.cpp.i
+.PHONY : myreadwrite.i
+
+# target to preprocess a source file
+myreadwrite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_read_and_write.dir/build.make CMakeFiles/template_read_and_write.dir/myreadwrite.cpp.i
+.PHONY : myreadwrite.cpp.i
+
+myreadwrite.s: myreadwrite.cpp.s
+.PHONY : myreadwrite.s
+
+# target to generate assembly for a file
+myreadwrite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_read_and_write.dir/build.make CMakeFiles/template_read_and_write.dir/myreadwrite.cpp.s
+.PHONY : myreadwrite.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... myreadwrite.o"
+	@echo "... myreadwrite.i"
+	@echo "... myreadwrite.s"
 .PHONY : help
 
 

@@ -81,12 +81,12 @@ clean: CMakeFiles/template_read_and_write.dir/clean
 CMakeFiles/template_read_and_write.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_read_and_write.dir/build.make CMakeFiles/template_read_and_write.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_read_and_write.dir/build.make CMakeFiles/template_read_and_write.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target template_read_and_write"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target template_read_and_write"
 .PHONY : CMakeFiles/template_read_and_write.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/template_read_and_write.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/template_read_and_write.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/template_read_and_write.dir/rule

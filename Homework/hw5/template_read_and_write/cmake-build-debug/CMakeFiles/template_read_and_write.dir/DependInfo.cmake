@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/main.cpp" "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/cmake-build-debug/CMakeFiles/template_read_and_write.dir/main.cpp.o"
+  "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/myreadwrite.cpp" "/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/cmake-build-debug/CMakeFiles/template_read_and_write.dir/myreadwrite.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
