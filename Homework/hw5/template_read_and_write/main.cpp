@@ -11,6 +11,13 @@ using std::ios;
 #include <string>
 using std::string;
 
+template<typename T>
+T myWrite(fstream & outputStream, T value){
+    outputStream.open("output.dat", ios::out | ios::binary);
+    outputStream.write(reinterpret_cast<const char *>(& value), sizeof(value));
+    outputStream.close();
+}
+
 // Writes out an int to binary file
 void myWriteInt(fstream & outputStream, int value){
     outputStream.open("output.dat", ios::out | ios::binary);
@@ -39,7 +46,9 @@ void myReadInt(fstream & inputStream, int & value) {
 int main() {
     fstream f;
     int n = 22;
-    myWriteInt(f, n);
+    float k = 3.5;
+    myWrite(f, k);
+//    myWriteInt(f, n);
     int j;
     myReadInt(f, j);
     cout << "J is equal to " << j << endl;
