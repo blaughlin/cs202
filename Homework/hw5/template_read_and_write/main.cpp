@@ -12,10 +12,28 @@ using std::ios;
 using std::string;
 
 template<typename T>
-T myWrite(fstream & outputStream, T value){
+void myWrite(fstream & outputStream, T value){
     outputStream.open("output.dat", ios::out | ios::binary);
     outputStream.write(reinterpret_cast<const char *>(& value), sizeof(value));
     outputStream.close();
+}
+
+template<typename T>
+void myRead(fstream & inputStream, T & value) {
+    inputStream.open("output.dat", ios::in | ios::binary);
+    if (!inputStream) { cout << "Could not open file" << endl;
+        exit(1);
+    }
+    inputStream.read(reinterpret_cast<char *>(&value),sizeof(value));
+    if (!inputStream) {
+        if (inputStream.eof()) {
+            cout << "EOF" << endl;
+            exit(1);
+        } else {
+            cout << "READ ERROR" << endl;
+            exit(1);
+        }
+    }
 }
 
 // Writes out an int to binary file
@@ -47,10 +65,12 @@ int main() {
     fstream f;
     int n = 22;
     float k = 3.5;
-    myWrite(f, k);
+    myWrite(f, n);
 //    myWriteInt(f, n);
     int j;
-    myReadInt(f, j);
-    cout << "J is equal to " << j << endl;
+//    myReadInt(f, j);
+    int z;
+    myRead(f, z);
+    cout << "z is equal to " << z << endl;
     return 0;
 }
