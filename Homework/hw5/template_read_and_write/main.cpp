@@ -7,20 +7,24 @@ using std::cout;
 using std::endl;
 #include <fstream>
 using std::fstream;
+using std::ofstream;
+using std::ifstream;
 using std::ios;
 #include <string>
 using std::string;
 
 template<typename T>
-void myWrite(fstream & outputStream, T value){
-    outputStream.open("output.dat", ios::out | ios::binary);
+void myWrite(ofstream & outputStream, T value){
+//    outputStream.open("output.dat", ios::out | ios::binary);
+    outputStream.setf(ios::out | ios::binary);
     outputStream.write(reinterpret_cast<const char *>(& value), sizeof(value));
     outputStream.close();
 }
 
 template<typename T>
-void myRead(fstream & inputStream, T & value) {
-    inputStream.open("output.dat", ios::in | ios::binary);
+void myRead(ifstream & inputStream, T & value) {
+//    inputStream.open("output.dat", ios::in | ios::binary);
+    inputStream.setf(ios::in | ios::binary);
     if (!inputStream) { cout << "Could not open file" << endl;
         exit(1);
     }
@@ -62,15 +66,31 @@ void myReadInt(fstream & inputStream, int & value) {
 }
 
 int main() {
-    fstream f;
-    int n = 22;
-    float k = 3.5;
-    myWrite(f, n);
-//    myWriteInt(f, n);
-    int j;
-//    myReadInt(f, j);
-    int z;
-    myRead(f, z);
-    cout << "z is equal to " << z << endl;
+    ofstream ofile("numbers.dat");
+    double d=13.3;
+    myWrite(ofile,d);
+    int x=5;
+    myWrite(ofile,x);
+
+    ifstream ifile("numbers.dat");
+    double readd;
+    int readx;
+
+//    myRead(ifile,readd);
+    myRead(ifile,readx);
+
+
+
+//    myRead(ifile,readd);
+//    myRead(ifile,readx);
+//    std::ofstream ofile("numbers.dat");
+//    float q = 33.77;
+//    myWrite(ofile, q);
+//
+//    float z;
+//    std::ifstream ifile("numbers.dat");
+//
+//    myRead(ifile, z);
+//    cout << "z is equal to " << z << endl;
     return 0;
 }
