@@ -129,6 +129,30 @@ template_read_and_write/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_read_and_write.dir/build.make CMakeFiles/template_read_and_write.dir/build
 .PHONY : template_read_and_write/fast
 
+Rational.o: Rational.cpp.o
+.PHONY : Rational.o
+
+# target to build an object file
+Rational.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_read_and_write.dir/build.make CMakeFiles/template_read_and_write.dir/Rational.cpp.o
+.PHONY : Rational.cpp.o
+
+Rational.i: Rational.cpp.i
+.PHONY : Rational.i
+
+# target to preprocess a source file
+Rational.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_read_and_write.dir/build.make CMakeFiles/template_read_and_write.dir/Rational.cpp.i
+.PHONY : Rational.cpp.i
+
+Rational.s: Rational.cpp.s
+.PHONY : Rational.s
+
+# target to generate assembly for a file
+Rational.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/template_read_and_write.dir/build.make CMakeFiles/template_read_and_write.dir/Rational.cpp.s
+.PHONY : Rational.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... template_read_and_write"
+	@echo "... Rational.o"
+	@echo "... Rational.i"
+	@echo "... Rational.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

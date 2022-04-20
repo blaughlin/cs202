@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/Rational.cpp">
+			<Option target="template_read_and_write"/>
+		</Unit>
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/Rational.hpp">
+			<Option target="template_read_and_write"/>
+		</Unit>
 		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/main.cpp">
 			<Option target="template_read_and_write"/>
 		</Unit>

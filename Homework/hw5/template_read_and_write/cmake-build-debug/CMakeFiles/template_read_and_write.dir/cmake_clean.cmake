@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/template_read_and_write.dir/Rational.cpp.o"
   "CMakeFiles/template_read_and_write.dir/main.cpp.o"
   "CMakeFiles/template_read_and_write.dir/myreadwrite.cpp.o"
   "template_read_and_write"
