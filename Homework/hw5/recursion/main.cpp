@@ -25,9 +25,26 @@ int fib(int number){
     return fib(number - 1) + fib(number - 2);
 }
 
+// ackerman function
+int ack(int  m, int n){
+    if (m == 0){
+        return n + 1;
+    }
+    else if( (m>0) && (n==0) ){
+        return ack(m-1, 1);
+    }
+    else if ( (m > 0) && (n > 0) ){
+        return ack(m-1, ack(m, n-1));
+    }
+}
+
+
 
 int main() {
     cout << fib_loop(4) << endl;
     cout  << fib(4) <<endl;
+    int A;
+    A = ack(100, 200);
+    cout << A << endl;
     return 0;
 }
