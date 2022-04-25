@@ -17,8 +17,17 @@ int fib_loop(int number){
 return sequence.at(number);
 }
 
+// recursive solution to fibonacci
+int fib(int number){
+    if (number < 2){
+        return number;
+    }
+    return fib(number - 1) + fib(number - 2);
+}
+
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    cout << fib_loop(4);
+    cout << fib_loop(4) << endl;
+    cout  << fib(4) <<endl;
     return 0;
 }
