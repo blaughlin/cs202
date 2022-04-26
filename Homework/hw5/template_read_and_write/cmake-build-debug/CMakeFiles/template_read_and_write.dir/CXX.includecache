@@ -6,15 +6,33 @@
 
 #IncludeRegexTransform: 
 
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/Rational.hpp
+iostream
+-
+numeric
+-
+
 /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/main.cpp
 myreadwrite.hpp
 /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/myreadwrite.hpp
-iostream
--
-
-/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/myreadwrite.cpp
 myreadwrite.hpp
 /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/myreadwrite.hpp
+Rational.hpp
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/Rational.hpp
+Rational.hpp
+/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/Rational.hpp
+iostream
+-
+string
+-
+stdexcept
+-
+fstream
+-
+array
+-
+sstream
+-
 
 /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/template_read_and_write/myreadwrite.hpp
 iostream
