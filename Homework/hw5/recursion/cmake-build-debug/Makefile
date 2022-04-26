@@ -153,29 +153,29 @@ StopWatch.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursion.dir/build.make CMakeFiles/recursion.dir/StopWatch.cpp.s
 .PHONY : StopWatch.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+recursion.o: recursion.cpp.o
+.PHONY : recursion.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursion.dir/build.make CMakeFiles/recursion.dir/main.cpp.o
-.PHONY : main.cpp.o
+recursion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursion.dir/build.make CMakeFiles/recursion.dir/recursion.cpp.o
+.PHONY : recursion.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+recursion.i: recursion.cpp.i
+.PHONY : recursion.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursion.dir/build.make CMakeFiles/recursion.dir/main.cpp.i
-.PHONY : main.cpp.i
+recursion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursion.dir/build.make CMakeFiles/recursion.dir/recursion.cpp.i
+.PHONY : recursion.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+recursion.s: recursion.cpp.s
+.PHONY : recursion.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursion.dir/build.make CMakeFiles/recursion.dir/main.cpp.s
-.PHONY : main.cpp.s
+recursion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/recursion.dir/build.make CMakeFiles/recursion.dir/recursion.cpp.s
+.PHONY : recursion.cpp.s
 
 # Help Target
 help:
@@ -189,9 +189,9 @@ help:
 	@echo "... StopWatch.o"
 	@echo "... StopWatch.i"
 	@echo "... StopWatch.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... recursion.o"
+	@echo "... recursion.i"
+	@echo "... recursion.s"
 .PHONY : help
 
 

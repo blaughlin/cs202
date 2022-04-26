@@ -66,18 +66,18 @@ include CMakeFiles/recursion.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/recursion.dir/flags.make
 
-CMakeFiles/recursion.dir/main.cpp.o: CMakeFiles/recursion.dir/flags.make
-CMakeFiles/recursion.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/recursion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/recursion.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/recursion.dir/main.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/recursion/main.cpp
+CMakeFiles/recursion.dir/recursion.cpp.o: CMakeFiles/recursion.dir/flags.make
+CMakeFiles/recursion.dir/recursion.cpp.o: ../recursion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/recursion/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/recursion.dir/recursion.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/recursion.dir/recursion.cpp.o -c /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/recursion/recursion.cpp
 
-CMakeFiles/recursion.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/recursion.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/recursion/main.cpp > CMakeFiles/recursion.dir/main.cpp.i
+CMakeFiles/recursion.dir/recursion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/recursion.dir/recursion.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/recursion/recursion.cpp > CMakeFiles/recursion.dir/recursion.cpp.i
 
-CMakeFiles/recursion.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/recursion.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/recursion/main.cpp -o CMakeFiles/recursion.dir/main.cpp.s
+CMakeFiles/recursion.dir/recursion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/recursion.dir/recursion.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/recursion/recursion.cpp -o CMakeFiles/recursion.dir/recursion.cpp.s
 
 CMakeFiles/recursion.dir/StopWatch.cpp.o: CMakeFiles/recursion.dir/flags.make
 CMakeFiles/recursion.dir/StopWatch.cpp.o: ../StopWatch.cpp
@@ -94,13 +94,13 @@ CMakeFiles/recursion.dir/StopWatch.cpp.s: cmake_force
 
 # Object files for target recursion
 recursion_OBJECTS = \
-"CMakeFiles/recursion.dir/main.cpp.o" \
+"CMakeFiles/recursion.dir/recursion.cpp.o" \
 "CMakeFiles/recursion.dir/StopWatch.cpp.o"
 
 # External object files for target recursion
 recursion_EXTERNAL_OBJECTS =
 
-recursion: CMakeFiles/recursion.dir/main.cpp.o
+recursion: CMakeFiles/recursion.dir/recursion.cpp.o
 recursion: CMakeFiles/recursion.dir/StopWatch.cpp.o
 recursion: CMakeFiles/recursion.dir/build.make
 recursion: CMakeFiles/recursion.dir/link.txt

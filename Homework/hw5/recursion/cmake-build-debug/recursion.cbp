@@ -86,7 +86,7 @@
 		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/recursion/StopWatch.hpp">
 			<Option target="recursion"/>
 		</Unit>
-		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/recursion/main.cpp">
+		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/recursion/recursion.cpp">
 			<Option target="recursion"/>
 		</Unit>
 		<Unit filename="/Users/bernardlaughlin/Desktop/Code/C++/cs202/Homework/hw5/recursion/CMakeLists.txt">

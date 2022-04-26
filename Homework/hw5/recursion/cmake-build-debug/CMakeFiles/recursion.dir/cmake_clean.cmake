@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/recursion.dir/StopWatch.cpp.o"
-  "CMakeFiles/recursion.dir/main.cpp.o"
+  "CMakeFiles/recursion.dir/recursion.cpp.o"
   "recursion"
   "recursion.pdb"
 )

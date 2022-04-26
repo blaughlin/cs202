@@ -3,4 +3,4 @@ project(recursion)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(recursion main.cpp StopWatch.cpp StopWatch.hpp)
+add_executable(recursion recursion.cpp StopWatch.cpp StopWatch.hpp)
